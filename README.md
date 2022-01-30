@@ -1,3 +1,5 @@
 # colorParty
-  help you find the color fit your website
-  https://eznow.github.io/colorParty/
+  You have no idea about the color of your website, your design?
+    Access to https://eznow.github.io/colorParty/
+      Maybe you can find the ideal color
+        Good luck
