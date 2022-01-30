@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
         <button class="btn" onclick="addColor()">
             <span></span>
             <span></span>
@@ -46,6 +47,13 @@
             e.style.backgroundColor = newColor;
             e.innerHTML = newColor;
             })
+        }
+
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
         }
     </script>
 </body>
