@@ -190,7 +190,7 @@ button span:nth-child(4)
 
 .btn{
     background: none;
-    padding: 15px 60px;
+    padding: 25px 90px;
     font-size: 1em;
     margin: 20px auto;
     max-width: 200px;
@@ -198,6 +198,32 @@ button span:nth-child(4)
     display: block;
     border: 2px solid #111;
     cursor: pointer;
+}
+
+.btn span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #00adff;
+    z-index: 2;
+    mix-blend-mode: color;
+    animation: animate 10s linear infinite; 
+}
+
+content::before{
+    content: 'Refresh';
+    position: absolute;
+    top: 31%;
+    Left: 4%;
+    bottom: 0;
+    width: 100%;
+    /* background: #00adff; */
+    z-index: 2;
+    mix-blend-mode: color;
+    animation: animate 10s linear infinite; 
 }
 
 .container{
